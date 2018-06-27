@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/todo"
+        android:scaleX="1.4"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="28dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo1"
+        android:layout_below="@id/Image"/>
+
+    <TextView
+        android:id="@+id/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/udacity"
+        android:fontFamily="sans-serif"
+        android:textSize="28sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/user"
+        android:layout_below="@id/Image"
+        />
+
+      <TextView
+        android:id="@+id/Street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2465_latham_st"
+        android:padding="5dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_below="@id/udacity"
+        />
+
+    <TextView
+        android:id="@+id/Street1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mountain_view_ca_94043"
+        android:padding="5dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:layout_below="@id/Street"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/www_udacity_com"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@id/Street1"
+        />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_650_555_5555"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@id/address"/>
+
+
+</RelativeLayout>
